@@ -1,0 +1,20 @@
+site_name: AI Engineering Course
+site_dir: build
+
+nav:
+  - Home: index.md
+  - "Module 1: Fundamentals":
+    - Overview: Module-1/index.md
+    - "Class 1: Fundamentals of Programming, Data Science and Math": Module-1/class-1.md
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
