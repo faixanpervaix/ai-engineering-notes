@@ -3,7 +3,7 @@ site_dir: build
 
 nav:
   - Home: index.md
-  - "Module 1: Fundamentals":
+  - "Module 1":
     - Overview: Module-1/index.md
     - "Class 1: Python Data Types": Module-1/class-1-python-data-types.md
 
