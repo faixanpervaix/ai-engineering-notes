@@ -6,4 +6,4 @@ This course covers the fundamentals of AI engineering — from programming and d
 
 | # | Module | Description |
 |---|--------|-------------|
-| 1 | [Module 1: Fundamentals](Module-1/) | Programming, data science, and math foundations for AI |
+| 1 | [Module 1](Module-1/) | Programming, data science, and math foundations for AI |
