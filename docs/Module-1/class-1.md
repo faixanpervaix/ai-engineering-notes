@@ -97,7 +97,7 @@ Agentic AI can run a workflow from start to finish.
 
 ## Data Analyst vs Data Engineer vs Data Scientist
 
-![Comparison of Data Analyst, Data Engineer, and Data Scientist Roles](different-fields-in-ds.png)
+![Comparison of Data Analyst, Data Engineer, and Data Scientist Roles](../assets/images/module-1/class-1/different-fields-in-ds.png)
 
 This image compares three common careers in the data world. They all work with data, but each role solves a different part of the problem.
 
@@ -140,3 +140,35 @@ In most teams, the flow looks like this:
 **Raw Data** &rarr; **Data Engineer prepares it** &rarr; **Data Analyst explains it** &rarr; **Data Scientist predicts with it**
 
 In small companies, one person may do parts of all three roles. In larger companies, these are usually separate jobs.
+
+### Python Installation
+
+**Via Anaconda**
+
+Click [Anaconda](https://www.anaconda.com/download) to install anaconda, which is a popular Python distribution that includes many data science libraries and tools.
+
+> NOTE: During the installation do not forget to check the box that says "Add Anaconda to my PATH environment variable" to ensure you can use Python from the command line.
+
+![Add Anaconda to PATH](../assets/images/module-1/class-1/anaconda-add-to-path.png)
+
+**Directly via Python**
+
+Click [Python](https://www.python.org/downloads/) to install Python directly from the official website. This is a more lightweight option if you only need Python without the additional tools provided by Anaconda.
+
+VS Code Installation:
+
+Click [VS Code](https://code.visualstudio.com/download) to install Visual Studio Code, a popular code editor that supports Python development with features like debugging, extensions, and integrated terminal.
+
+VS Code extensions for Python:
+
+- Python VS Code Extension
+
+![Python Ext](../assets/images/module-1/class-1/python-vs-code-ext.png)
+
+- Jypyter VS Code Extension
+
+![Jupyter Ext](../assets/images/module-1/class-1/jupyter-vs-code-ext.png)
+
+- Code Runner VS Code Extension
+
+![Code Runner Ext](../assets/images/module-1/class-1/code-runner-vs-code-ext.png)
