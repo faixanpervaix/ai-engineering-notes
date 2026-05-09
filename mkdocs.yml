@@ -5,10 +5,11 @@ nav:
   - Home: index.md
   - "Module 1: Fundamentals":
     - Overview: Module-1/index.md
-    - "Class 1: Fundamentals of Programming, Data Science and Math": Module-1/class-1.md
+    - "Class 1: Introduction": Module-1/class-1.md
 
 theme:
   name: material
+  logo: assets/logo.svg
   palette:
     - scheme: default
       toggle:

@@ -1,4 +1,4 @@
-# Fundamentals of Programming, Data Science and Math
+# Introduction to Agentic AI and Data Roles
 
 ## What is Agentic AI?
 
