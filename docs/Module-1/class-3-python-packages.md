@@ -201,3 +201,10 @@ python -m pip check
 - Use built-in packages for common tasks.
 - Install third-party packages with `pip`.
 - Common beginner-friendly packages: `numpy`, `pandas`, and `requests`.
+
+
+<hr/>
+
+**Notebook** 
+
+[OpenStreetMap](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3.ipynb)
