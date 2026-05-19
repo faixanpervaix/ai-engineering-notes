@@ -1,0 +1,1440 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Python Fundamentals - AI Engineering Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#python-fundamentals" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Engineering Course" class="md-header__button md-logo" aria-label="AI Engineering Course" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Engineering Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Python Fundamentals
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Engineering Course" class="md-nav__button md-logo" aria-label="AI Engineering Course" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    AI Engineering Course
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Module 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Module 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class-1-python-data-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 1: Python Data Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#comparison-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparison Operators
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comparison Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#more-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        More Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="More Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#equal-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equal To ==
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not-equal-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Not Equal To !=
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#greater-than" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Greater Than &gt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#less-than" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Less Than &lt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#greater-than-or-equal-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Greater Than or Equal To &gt;=
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#less-than-or-equal-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Less Than or Equal To &lt;=
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-same-object-is" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is (Same Object) is
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-not-different-object-is-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Is Not (Different Object) is not
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in-membership-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In (Membership) in
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#not-in-membership-not-in" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Not In (Membership) not in
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-comparison-tricks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Comparison Tricks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Comparison Tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-compare-strings-safely-case-insensitive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) Compare strings safely (case-insensitive)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-compare-floats-with-tolerance-not-strict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Compare floats with tolerance (not strict ==)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-use-tuplelist-lexicographic-comparisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Use tuple/list lexicographic comparisons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-set-comparisons-use-subsetsuperset-meaning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Set comparisons use subset/superset meaning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-know-vs-is-in-real-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) Know == vs is in real code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-membership-with-dictionaries-checks-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Membership with dictionaries checks keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chained-comparisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chained Comparisons
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chained Comparisons">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chained-comparison-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chained Comparison Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conditional Statements
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Statements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statement-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conditional Statement Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conditional Statement Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-basic-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) Basic if
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) if + else
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-if-elif-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) if + elif + else
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-multiple-conditions-with-and" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Multiple conditions with and
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loops
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Loops">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-range-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The range() Function
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loop Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Loop Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-for-loop-with-a-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) for loop with a list
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-for-loop-with-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) for loop with range()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intermediate-loop-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intermediate Loop Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Intermediate Loop Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-for-loop-to-sum-even-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) for loop to sum even numbers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-while-loop-for-factorial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) while loop for factorial
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-loop-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Loop Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Loop Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-for-else-to-check-prime-number" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) for + else to check prime number
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-while-else-for-retry-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) while + else for retry logic
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-nested-for-loops-for-matrix-transpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Nested for loops for matrix transpose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) while loop
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-break-and-continue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) break and continue
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-for-loop-with-enumerate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) for loop with enumerate()
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-loop-through-dictionary-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Loop through dictionary items
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-nested-for-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7) Nested for loops
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-while-true-with-break" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8) while True with break
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="python-fundamentals">Python Fundamentals</h1>
+<h2 id="comparison-operators">Comparison Operators</h2>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>Equal to</td>
+<td><code>5 == 5</code> -&gt; <code>True</code></td>
+</tr>
+<tr>
+<td><code>!=</code></td>
+<td>Not equal to</td>
+<td><code>5 != 3</code> -&gt; <code>True</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>Greater than</td>
+<td><code>7 &gt; 4</code> -&gt; <code>True</code></td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>Less than</td>
+<td><code>2 &lt; 9</code> -&gt; <code>True</code></td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>Greater than or equal to</td>
+<td><code>6 &gt;= 6</code> -&gt; <code>True</code></td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>Less than or equal to</td>
+<td><code>3 &lt;= 8</code> -&gt; <code>True</code></td>
+</tr>
+<tr>
+<td><code>is</code></td>
+<td>True if both variables reference the same object</td>
+<td><code>a = [1]; b = a; a is b</code> -&gt; <code>True</code></td>
+</tr>
+<tr>
+<td><code>is not</code></td>
+<td>True if variables reference different objects</td>
+<td><code>a = [1]; b = [1]; a is not b</code> -&gt; <code>True</code></td>
+</tr>
+<tr>
+<td><code>in</code></td>
+<td>True if a value exists in a sequence</td>
+<td><code>'a' in "apple"</code> -&gt; <code>True</code></td>
+</tr>
+<tr>
+<td><code>not in</code></td>
+<td>True if a value does not exist in a sequence</td>
+<td><code>'z' not in "apple"</code> -&gt; <code>True</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="more-examples">More Examples</h3>
+<h4 id="equal-to">Equal To <code>==</code></h4>
+<ul>
+<li><code>10 == 10</code> -&gt; <code>True</code></li>
+<li><code>'cat' == 'cat'</code> -&gt; <code>True</code></li>
+<li><code>[1, 2] == [1, 2]</code> -&gt; <code>True</code></li>
+</ul>
+<h4 id="not-equal-to">Not Equal To <code>!=</code></h4>
+<ul>
+<li><code>10 != 5</code> -&gt; <code>True</code></li>
+<li><code>'apple' != 'orange'</code> -&gt; <code>True</code></li>
+<li><code>3 != 3</code> -&gt; <code>False</code></li>
+</ul>
+<h4 id="greater-than">Greater Than <code>&gt;</code></h4>
+<ul>
+<li><code>9 &gt; 4</code> -&gt; <code>True</code></li>
+<li><code>2 &gt; 7</code> -&gt; <code>False</code></li>
+<li><code>100 &gt; 99</code> -&gt; <code>True</code></li>
+</ul>
+<h4 id="less-than">Less Than <code>&lt;</code></h4>
+<ul>
+<li><code>1 &lt; 8</code> -&gt; <code>True</code></li>
+<li><code>5 &lt; 5</code> -&gt; <code>False</code></li>
+<li><code>-3 &lt; 0</code> -&gt; <code>True</code></li>
+</ul>
+<h4 id="greater-than-or-equal-to">Greater Than or Equal To <code>&gt;=</code></h4>
+<ul>
+<li><code>8 &gt;= 8</code> -&gt; <code>True</code></li>
+<li><code>9 &gt;= 3</code> -&gt; <code>True</code></li>
+<li><code>2 &gt;= 10</code> -&gt; <code>False</code></li>
+</ul>
+<h4 id="less-than-or-equal-to">Less Than or Equal To <code>&lt;=</code></h4>
+<ul>
+<li><code>4 &lt;= 4</code> -&gt; <code>True</code></li>
+<li><code>1 &lt;= 9</code> -&gt; <code>True</code></li>
+<li><code>12 &lt;= 7</code> -&gt; <code>False</code></li>
+</ul>
+<h4 id="is-same-object-is">Is (Same Object) <code>is</code></h4>
+<ul>
+<li><code>a = [1, 2]; b = a; a is b</code> -&gt; <code>True</code></li>
+<li><code>x = 256; y = 256; x is y</code> -&gt; <code>True</code> (often)</li>
+<li><code>m = [1]; n = [1]; m is n</code> -&gt; <code>False</code></li>
+</ul>
+<h4 id="is-not-different-object-is-not">Is Not (Different Object) <code>is not</code></h4>
+<ul>
+<li><code>a = [1]; b = [1]; a is not b</code> -&gt; <code>True</code></li>
+<li><code>x = None; x is not None</code> -&gt; <code>False</code></li>
+<li><code>p = 'hi'; q = p; p is not q</code> -&gt; <code>False</code></li>
+</ul>
+<h4 id="in-membership-in">In (Membership) <code>in</code></h4>
+<ul>
+<li><code>'a' in 'banana'</code> -&gt; <code>True</code></li>
+<li><code>3 in [1, 2, 3, 4]</code> -&gt; <code>True</code></li>
+<li><code>'key' in {'key': 1, 'value': 2}</code> -&gt; <code>True</code></li>
+</ul>
+<h4 id="not-in-membership-not-in">Not In (Membership) <code>not in</code></h4>
+<ul>
+<li><code>'z' not in 'banana'</code> -&gt; <code>True</code></li>
+<li><code>5 not in [1, 2, 3]</code> -&gt; <code>True</code></li>
+<li><code>'id' not in {'name': 'Ava'}</code> -&gt; <code>True</code></li>
+</ul>
+<h3 id="advanced-comparison-tricks">Advanced Comparison Tricks</h3>
+<h4 id="1-compare-strings-safely-case-insensitive">1) Compare strings safely (case-insensitive)</h4>
+<ul>
+<li><code>'Admin'.casefold() == 'ADMIN'.casefold()</code> -&gt; <code>True</code></li>
+<li><code>'Straße'.casefold() == 'STRASSE'.casefold()</code> -&gt; <code>True</code></li>
+</ul>
+<h4 id="2-compare-floats-with-tolerance-not-strict">2) Compare floats with tolerance (not strict <code>==</code>)</h4>
+<ul>
+<li><code>0.1 + 0.2 == 0.3</code> -&gt; <code>False</code></li>
+<li><code>import math; math.isclose(0.1 + 0.2, 0.3)</code> -&gt; <code>True</code></li>
+</ul>
+<h4 id="3-use-tuplelist-lexicographic-comparisons">3) Use tuple/list lexicographic comparisons</h4>
+<ul>
+<li><code>(1, 9) &lt; (2, 0)</code> -&gt; <code>True</code></li>
+<li><code>[1, 'a'] &lt; [1, 'b']</code> -&gt; <code>True</code></li>
+</ul>
+<h4 id="4-set-comparisons-use-subsetsuperset-meaning">4) Set comparisons use subset/superset meaning</h4>
+<ul>
+<li><code>{1, 2} &lt; {1, 2, 3}</code> -&gt; <code>True</code> (proper subset)</li>
+<li><code>{1, 2} &lt;= {1, 2}</code> -&gt; <code>True</code> (subset or equal)</li>
+</ul>
+<h4 id="5-know-vs-is-in-real-code">5) Know <code>==</code> vs <code>is</code> in real code</h4>
+<ul>
+<li><code>a = [1, 2]; b = [1, 2]; a == b</code> -&gt; <code>True</code></li>
+<li><code>a = [1, 2]; b = [1, 2]; a is b</code> -&gt; <code>False</code></li>
+<li><code>x = None; x is None</code> -&gt; <code>True</code> (preferred style for <code>None</code> checks)</li>
+</ul>
+<h4 id="6-membership-with-dictionaries-checks-keys">6) Membership with dictionaries checks keys</h4>
+<ul>
+<li><code>'name' in {'name': 'Ava', 'age': 20}</code> -&gt; <code>True</code></li>
+<li><code>'Ava' in {'name': 'Ava', 'age': 20}</code> -&gt; <code>False</code></li>
+</ul>
+<h2 id="chained-comparisons">Chained Comparisons</h2>
+<p>Chained comparisons let you combine multiple comparisons in a single expression.
+For example, <code>x &lt; y &lt; z</code> means <code>x &lt; y and y &lt; z</code>, but <code>y</code> is evaluated only once.
+Python evaluates chained comparisons from left to right and stops as soon as one part is <code>False</code>.</p>
+<h3 id="chained-comparison-examples">Chained Comparison Examples</h3>
+<ul>
+<li><code>1 &lt; 5 &lt; 10</code> -&gt; <code>True</code></li>
+<li><code>score = 85; 0 &lt;= score &lt;= 100</code> -&gt; <code>True</code></li>
+<li><code>a, b, c = 2, 5, 3; a &lt; b &gt; c</code> -&gt; <code>True</code></li>
+</ul>
+<pre><code class="language-python">age = 25
+is_valid_age = 18 &lt;= age &lt; 65
+print(is_valid_age)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">True
+</code></pre>
+<h2 id="conditional-statements">Conditional Statements</h2>
+<p>Conditional statements let your program make decisions.
+Use <code>if</code> to check a condition, <code>elif</code> for additional conditions, and <code>else</code> for a fallback case.
+Python uses indentation to define each block, so spacing is required and meaningful.</p>
+<h3 id="conditional-statement-examples">Conditional Statement Examples</h3>
+<h4 id="1-basic-if">1) Basic <code>if</code></h4>
+<pre><code class="language-python">temperature = 34
+
+if temperature &gt; 30:
+    print(&quot;It is a hot day&quot;)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">It is a hot day
+</code></pre>
+<h4 id="2-if-else">2) <code>if</code> + <code>else</code></h4>
+<pre><code class="language-python">number = 7
+
+if number % 2 == 0:
+    print(&quot;Even&quot;)
+else:
+    print(&quot;Odd&quot;)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">Odd
+</code></pre>
+<h4 id="3-if-elif-else">3) <code>if</code> + <code>elif</code> + <code>else</code></h4>
+<pre><code class="language-python">marks = 82
+
+if marks &gt;= 90:
+    print(&quot;Grade A&quot;)
+elif marks &gt;= 75:
+    print(&quot;Grade B&quot;)
+else:
+    print(&quot;Grade C&quot;)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">Grade B
+</code></pre>
+<h4 id="4-multiple-conditions-with-and">4) Multiple conditions with <code>and</code></h4>
+<pre><code class="language-python">age = 20
+has_id = True
+
+if age &gt;= 18 and has_id:
+    print(&quot;Entry allowed&quot;)
+else:
+    print(&quot;Entry denied&quot;)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">Entry allowed
+</code></pre>
+<h2 id="loops">Loops</h2>
+<p>Loops let you run a block of code multiple times without writing the same lines again.
+In Python, the two main loop types are <code>for</code> (iterate over items) and <code>while</code> (repeat while a condition is <code>True</code>).
+You can also control loops using <code>break</code> (stop early) and <code>continue</code> (skip current iteration).</p>
+<h3 id="the-range-function">The <code>range()</code> Function</h3>
+<p><code>range()</code> is used to generate a sequence of numbers, mostly inside <code>for</code> loops.
+The <code>stop</code> value is not included in the result.</p>
+<ul>
+<li><code>range(stop)</code> -&gt; starts from <code>0</code> and goes up to <code>stop - 1</code></li>
+<li><code>range(start, stop)</code> -&gt; starts from <code>start</code> and goes up to <code>stop - 1</code></li>
+<li><code>range(start, stop, step)</code> -&gt; moves by <code>step</code> each time (step can be negative)</li>
+</ul>
+<pre><code class="language-python">print(list(range(5)))
+print(list(range(2, 6)))
+print(list(range(10, 2, -2)))
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">[0, 1, 2, 3, 4]
+[2, 3, 4, 5]
+[10, 8, 6, 4]
+</code></pre>
+<h3 id="loop-examples">Loop Examples</h3>
+<h4 id="1-for-loop-with-a-list">1) <code>for</code> loop with a list</h4>
+<pre><code class="language-python">fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;mango&quot;]
+
+for fruit in fruits:
+    print(fruit)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">apple
+banana
+mango
+</code></pre>
+<h4 id="2-for-loop-with-range">2) <code>for</code> loop with <code>range()</code></h4>
+<pre><code class="language-python">for i in range(1, 6):
+    print(i)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">1
+2
+3
+4
+5
+</code></pre>
+<h3 id="intermediate-loop-examples">Intermediate Loop Examples</h3>
+<h4 id="1-for-loop-to-sum-even-numbers">1) <code>for</code> loop to sum even numbers</h4>
+<pre><code class="language-python">numbers = [12, 7, 5, 10, 8]
+total = 0
+
+for n in numbers:
+    if n % 2 == 0:
+        total += n
+
+print(&quot;Sum of even numbers:&quot;, total)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">Sum of even numbers: 30
+</code></pre>
+<h4 id="2-while-loop-for-factorial">2) <code>while</code> loop for factorial</h4>
+<pre><code class="language-python">n = 5
+factorial = 1
+
+while n &gt; 1:
+    factorial *= n
+    n -= 1
+
+print(&quot;Factorial:&quot;, factorial)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">Factorial: 120
+</code></pre>
+<h3 id="advanced-loop-examples">Advanced Loop Examples</h3>
+<h4 id="1-for-else-to-check-prime-number">1) <code>for</code> + <code>else</code> to check prime number</h4>
+<pre><code class="language-python">n = 29
+
+for i in range(2, int(n ** 0.5) + 1):
+    if n % i == 0:
+        print(n, &quot;is not prime&quot;)
+        break
+else:
+    print(n, &quot;is prime&quot;)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">29 is prime
+</code></pre>
+<h4 id="2-while-else-for-retry-logic">2) <code>while</code> + <code>else</code> for retry logic</h4>
+<pre><code class="language-python">attempt = 1
+max_attempts = 3
+pin = &quot;2580&quot;
+entered_pin = [&quot;1111&quot;, &quot;9999&quot;, &quot;2580&quot;]
+
+while attempt &lt;= max_attempts:
+    current = entered_pin[attempt - 1]
+    if current == pin:
+        print(&quot;Access granted on attempt&quot;, attempt)
+        break
+    print(&quot;Wrong PIN on attempt&quot;, attempt)
+    attempt += 1
+else:
+    print(&quot;Card blocked&quot;)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">Wrong PIN on attempt 1
+Wrong PIN on attempt 2
+Access granted on attempt 3
+</code></pre>
+<h4 id="3-nested-for-loops-for-matrix-transpose">3) Nested <code>for</code> loops for matrix transpose</h4>
+<pre><code class="language-python">matrix = [[1, 2, 3], [4, 5, 6]]
+transpose = []
+
+for col in range(len(matrix[0])):
+    new_row = []
+    for row in range(len(matrix)):
+        new_row.append(matrix[row][col])
+    transpose.append(new_row)
+
+print(transpose)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">[[1, 4], [2, 5], [3, 6]]
+</code></pre>
+<h4 id="3-while-loop">3) <code>while</code> loop</h4>
+<pre><code class="language-python">count = 1
+
+while count &lt;= 3:
+    print(&quot;Count:&quot;, count)
+    count += 1
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">Count: 1
+Count: 2
+Count: 3
+</code></pre>
+<h4 id="4-break-and-continue">4) <code>break</code> and <code>continue</code></h4>
+<pre><code class="language-python">for n in range(1, 8):
+    if n == 3:
+        continue  # skip 3
+    if n == 6:
+        break  # stop loop at 6
+    print(n)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">1
+2
+4
+5
+</code></pre>
+<h4 id="5-for-loop-with-enumerate">5) <code>for</code> loop with <code>enumerate()</code></h4>
+<p><code>enumerate()</code> lets you loop through items and their index at the same time (<code>start=1</code> begins indexing from 1).</p>
+<pre><code class="language-python">colors = [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]
+
+for index, color in enumerate(colors, start=1):
+    print(index, color)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">1 red
+2 green
+3 blue
+</code></pre>
+<h4 id="6-loop-through-dictionary-items">6) Loop through dictionary items</h4>
+<pre><code class="language-python">student = {&quot;name&quot;: &quot;Ava&quot;, &quot;age&quot;: 20, &quot;grade&quot;: &quot;A&quot;}
+
+for key, value in student.items():
+    print(key, &quot;-&gt;&quot;, value)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">name -&gt; Ava
+age -&gt; 20
+grade -&gt; A
+</code></pre>
+<h4 id="7-nested-for-loops">7) Nested <code>for</code> loops</h4>
+<pre><code class="language-python">for i in range(1, 4):
+    for j in range(1, 4):
+        print(i, &quot;x&quot;, j, &quot;=&quot;, i * j)
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">1 x 1 = 1
+1 x 2 = 2
+1 x 3 = 3
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+3 x 1 = 3
+3 x 2 = 6
+3 x 3 = 9
+</code></pre>
+<h4 id="8-while-true-with-break">8) <code>while True</code> with <code>break</code></h4>
+<pre><code class="language-python">num = 1
+
+while True:
+    print(num)
+    num += 1
+    if num &gt; 5:
+        break
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">1
+2
+3
+4
+5
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../assets/js/external-links.js"></script>
+      
+    
+  </body>
+</html>
