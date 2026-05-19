@@ -1,6 +1,6 @@
 # Python Fundamentals
 
-## Comparison Operators
+## 1 - Comparison Operators
 
 | Operator | Description | Example |
 | --- | --- | --- |
@@ -94,7 +94,7 @@
 - `'name' in {'name': 'Ava', 'age': 20}` -> `True`
 - `'Ava' in {'name': 'Ava', 'age': 20}` -> `False`
 
-## Chained Comparisons
+## 2 - Chained Comparisons
 
 Chained comparisons let you combine multiple comparisons in a single expression.
 For example, `x < y < z` means `x < y and y < z`, but `y` is evaluated only once.
@@ -118,7 +118,7 @@ Output:
 True
 ```
 
-## Conditional Statements
+## 3 - Conditional Statements
 
 Conditional statements let your program make decisions.
 Use `if` to check a condition, `elif` for additional conditions, and `else` for a fallback case.
@@ -195,7 +195,7 @@ Output:
 Entry allowed
 ```
 
-## Loops
+## 4 - Loops
 
 Loops let you run a block of code multiple times without writing the same lines again.
 In Python, the two main loop types are `for` (iterate over items) and `while` (repeat while a condition is `True`).
@@ -369,7 +369,7 @@ Output:
 [[1, 4], [2, 5], [3, 6]]
 ```
 
-#### 3) `while` loop
+#### 4) `while` loop
 
 ```python
 count = 1
@@ -387,7 +387,7 @@ Count: 2
 Count: 3
 ```
 
-#### 4) `break` and `continue`
+#### 5) `break` and `continue`
 
 ```python
 for n in range(1, 8):
@@ -407,7 +407,7 @@ Output:
 5
 ```
 
-#### 5) `for` loop with `enumerate()`
+#### 6) `for` loop with `enumerate()`
 
 `enumerate()` lets you loop through items and their index at the same time (`start=1` begins indexing from 1).
 
@@ -426,7 +426,7 @@ Output:
 3 blue
 ```
 
-#### 6) Loop through dictionary items
+#### 7) Loop through dictionary items
 
 ```python
 student = {"name": "Ava", "age": 20, "grade": "A"}
@@ -443,7 +443,7 @@ age -> 20
 grade -> A
 ```
 
-#### 7) Nested `for` loops
+#### 8) Nested `for` loops
 
 ```python
 for i in range(1, 4):
@@ -465,7 +465,7 @@ Output:
 3 x 3 = 9
 ```
 
-#### 8) `while True` with `break`
+#### 9) `while True` with `break`
 
 ```python
 num = 1
@@ -485,4 +485,291 @@ Output:
 3
 4
 5
+```
+
+## 5 - Functions in Python
+
+Functions are reusable blocks of code that perform a specific task.
+In Python, you define a function using the `def` keyword.
+Functions can take inputs (parameters), can return output using `return`, and help avoid repeating the same logic.
+
+### Basic Function Syntax
+
+```python
+def function_name(parameters):
+    # function body
+    return value  # optional
+```
+
+### Function Examples
+
+#### 1) Function with no parameters and no return value
+
+```python
+def greet():
+    print("Hello, learner!")
+
+
+greet()
+```
+
+Output:
+
+```text
+Hello, learner!
+```
+
+#### 2) Function with parameters and return value
+
+```python
+def add(a, b):
+    return a + b
+
+
+result = add(10, 5)
+print(result)
+```
+
+Output:
+
+```text
+15
+```
+
+#### 3) Function with default argument
+
+```python
+def power(base, exponent=2):
+    return base ** exponent
+
+
+print(power(4))
+print(power(4, 3))
+```
+
+Output:
+
+```text
+16
+64
+```
+
+#### 4) Function called with keyword arguments
+
+```python
+def introduce(name, city):
+    print(name, "lives in", city)
+
+
+introduce(city="Lahore", name="Ava")
+```
+
+Output:
+
+```text
+Ava lives in Lahore
+```
+
+#### 5) Function with variable positional arguments (`*args`)
+
+```python
+def total_sum(*numbers):
+    return sum(numbers)
+
+
+print(total_sum(1, 2, 3))
+print(total_sum(10, 20, 30, 40))
+```
+
+Output:
+
+```text
+6
+100
+```
+
+#### 6) Function with variable keyword arguments (`**kwargs`)
+
+```python
+def show_profile(**details):
+    for key, value in details.items():
+        print(key, "->", value)
+
+
+show_profile(name="Ava", role="Engineer", experience=3)
+```
+
+Output:
+
+```text
+name -> Ava
+role -> Engineer
+experience -> 3
+```
+
+#### 7) Function returning multiple values
+
+```python
+def min_max(values):
+    return min(values), max(values)
+
+
+smallest, largest = min_max([12, 4, 19, 7])
+print("Min:", smallest)
+print("Max:", largest)
+```
+
+Output:
+
+```text
+Min: 4
+Max: 19
+```
+
+#### 8) Recursive function
+
+```python
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+
+print(factorial(5))
+```
+
+Output:
+
+```text
+120
+```
+
+## 6 - Lambda Function
+
+Lambda functions are small anonymous functions created with the `lambda` keyword.
+They can take multiple arguments, but they can contain only one expression.
+They are useful for short operations, especially with `sorted()`, `map()`, and `filter()`.
+
+### Lambda Function Syntax
+
+```python
+lambda arguments: expression
+```
+
+### Lambda Function Examples
+
+#### 1) Add two numbers
+
+```python
+add = lambda a, b: a + b
+print(add(4, 6))
+```
+
+Output:
+
+```text
+10
+```
+
+#### 2) Square a number
+
+```python
+square = lambda n: n * n
+print(square(7))
+```
+
+Output:
+
+```text
+49
+```
+
+#### 3) Use lambda with `sorted()`
+
+```python
+students = [("Ava", 22), ("Zain", 19), ("Mina", 21)]
+by_age = sorted(students, key=lambda item: item[1])
+print(by_age)
+```
+
+Output:
+
+```text
+[('Zain', 19), ('Mina', 21), ('Ava', 22)]
+```
+
+#### 4) Use lambda with `map()`
+
+```python
+numbers = [1, 2, 3, 4]
+doubled = list(map(lambda x: x * 2, numbers))
+print(doubled)
+```
+
+Output:
+
+```text
+[2, 4, 6, 8]
+```
+
+#### 5) Use lambda with `filter()`
+
+```python
+numbers = [1, 2, 3, 4, 5, 6]
+evens = list(filter(lambda x: x % 2 == 0, numbers))
+print(evens)
+```
+
+Output:
+
+```text
+[2, 4, 6]
+```
+
+#### 6) Lambda with conditional expression
+
+```python
+label = lambda n: "positive" if n > 0 else "zero" if n == 0 else "negative"
+print(label(-3))
+print(label(0))
+print(label(8))
+```
+
+Output:
+
+```text
+negative
+zero
+positive
+```
+
+### When Not to Use Lambda
+
+Use a normal `def` function instead of `lambda` when:
+
+- The logic needs multiple statements (loops, `try/except`, multiple `return` points).
+- The expression becomes too long and hurts readability.
+- You want a clear function name for debugging, stack traces, or reuse.
+- You want to add a docstring or type hints for better documentation.
+
+```python
+# Less readable with lambda
+result = list(map(lambda n: n * 2 if n % 2 == 0 else n * 3, [1, 2, 3, 4]))
+
+
+# Clearer with def
+def transform(n):
+    if n % 2 == 0:
+        return n * 2
+    return n * 3
+
+
+result = list(map(transform, [1, 2, 3, 4]))
+print(result)
+```
+
+Output:
+
+```text
+[3, 4, 9, 8]
 ```
