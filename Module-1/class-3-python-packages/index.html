@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../class-2-python-fundamentals/">
+      
       
       
         
@@ -19,7 +21,7 @@
     
     
       
-        <title>Introduction to Agentic AI and Data Roles - AI Engineering Course</title>
+        <title>Class 3: Python Packages - AI Engineering Course</title>
       
     
     
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-agentic-ai-and-data-roles" class="md-skip">
+        <a href="#python-packages" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction to Agentic AI and Data Roles
+              Class 3: Python Packages
             
           </span>
         </div>
@@ -250,18 +252,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -282,7 +286,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -381,10 +385,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../class-3-python-packages/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class 3: Python Packages
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -400,6 +431,259 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-python-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Is a Python Package?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Packages
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-standard-library-packages-built-into-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) Standard Library Packages (built into Python)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-third-party-packages-installed-from-pypi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Third-Party Packages (installed from PyPI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#popular-package-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Popular Package Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Popular Package Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-numpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) NumPy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-pandas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Pandas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Requests
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-install-these-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Install These Packages
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Install These Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command Breakdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-useful-pip-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Useful pip Commands
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Useful pip Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-list-installed-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) List installed packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-check-pip-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Check pip version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-upgrade-a-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Upgrade a package
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-uninstall-a-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Uninstall a package
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-save-current-environment-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) Save current environment packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-install-from-a-requirementstxt-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Install from a requirements.txt file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-check-dependency-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7) Check dependency issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -439,10 +723,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-agentic-ai" class="md-nav__link">
+  <a href="#what-is-a-python-package" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is Agentic AI?
+        What Is a Python Package?
       
     </span>
   </a>
@@ -450,33 +734,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#one-line-definition" class="md-nav__link">
+  <a href="#types-of-packages" class="md-nav__link">
     <span class="md-ellipsis">
       
-        One-line definition
+        Types of Packages
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#full-explanation-in-simple-words" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Full explanation in simple words
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Full explanation in simple words">
+    <nav class="md-nav" aria-label="Types of Packages">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-prompt" class="md-nav__link">
+  <a href="#1-standard-library-packages-built-into-python" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1) Prompt
+        1) Standard Library Packages (built into Python)
       
     </span>
   </a>
@@ -484,87 +757,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-goal-and-constraints" class="md-nav__link">
+  <a href="#2-third-party-packages-installed-from-pypi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2) Goal and constraints
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-planning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3) Planning
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4) Tools
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5) Actions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-observation-and-feedback" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6) Observation and feedback
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-memory" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7) Memory
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8-decision-loop" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        8) Decision loop
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9-guardrails-and-human-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        9) Guardrails and human control
+        2) Third-Party Packages (installed from PyPI)
       
     </span>
   </a>
@@ -577,33 +773,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-difference" class="md-nav__link">
+  <a href="#popular-package-examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick difference
+        Popular Package Examples
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-analyst-vs-data-engineer-vs-data-scientist" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Analyst vs Data Engineer vs Data Scientist
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Data Analyst vs Data Engineer vs Data Scientist">
+    <nav class="md-nav" aria-label="Popular Package Examples">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#data-analyst" class="md-nav__link">
+  <a href="#1-numpy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Analyst
+        1) NumPy
       
     </span>
   </a>
@@ -611,10 +796,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-engineer" class="md-nav__link">
+  <a href="#2-pandas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Engineer
+        2) Pandas
       
     </span>
   </a>
@@ -622,32 +807,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-scientist" class="md-nav__link">
+  <a href="#3-requests" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data Scientist
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-these-roles-connect" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How these roles connect
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#python-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Python Installation
+        3) Requests
       
     </span>
   </a>
@@ -656,6 +819,139 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-install-these-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Install These Packages
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Install These Packages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command Breakdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-useful-pip-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Other Useful pip Commands
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Useful pip Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-list-installed-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) List installed packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-check-pip-version" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Check pip version
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-upgrade-a-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Upgrade a package
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-uninstall-a-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Uninstall a package
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-save-current-environment-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) Save current environment packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-install-from-a-requirementstxt-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Install from a requirements.txt file
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-check-dependency-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7) Check dependency issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Summary
+      
+    </span>
+  </a>
   
 </li>
       
@@ -676,132 +972,139 @@
 
 
 
-<h1 id="introduction-to-agentic-ai-and-data-roles">Introduction to Agentic AI and Data Roles</h1>
-<h2 id="what-is-agentic-ai">What is Agentic AI?</h2>
-<p>Agentic AI is an AI system that can do more than give a single reply.
-It can take your prompt as a goal, plan steps, use tools, perform actions, check results, and keep going step by step until the job is completed.</p>
-<h2 id="one-line-definition">One-line definition</h2>
-<p>Agentic AI is goal-driven AI that uses prompts, planning, tools, memory, and feedback loops to take multi-step actions and complete tasks with minimal human guidance.</p>
-<h2 id="full-explanation-in-simple-words">Full explanation in simple words</h2>
-<h3 id="1-prompt">1) Prompt</h3>
-<p>A prompt is your instruction to the AI.</p>
-<p>Example prompt:</p>
-<p>"Find 3 beginner courses on AI and make a 6-month study plan."</p>
-<h3 id="2-goal-and-constraints">2) Goal and constraints</h3>
-<p>From your prompt, the AI identifies:</p>
+<h1 id="python-packages">Python Packages</h1>
+<h2 id="what-is-a-python-package">What Is a Python Package?</h2>
+<p>A Python package is a way to organize related Python code in folders.
+It usually contains one or more Python modules (<code>.py</code> files) and often an <code>__init__.py</code> file.</p>
 <ul>
-<li>The main goal (what to achieve)</li>
-<li>The limits (time, budget, format, and rules)</li>
+<li><strong>Module</strong>: a single Python file (for example, <code>math_utils.py</code>)</li>
+<li><strong>Package</strong>: a folder that groups related modules (for example, <code>my_project/utils/</code>)</li>
 </ul>
-<h3 id="3-planning">3) Planning</h3>
-<p>Instead of answering immediately, it creates a small plan.</p>
-<p>Example:</p>
-<ol>
-<li>Search courses</li>
-<li>Compare courses</li>
-<li>Build a schedule</li>
-<li>Present the final plan</li>
-</ol>
-<h3 id="4-tools">4) Tools</h3>
-<p>Tools are extra abilities the AI can use outside normal text generation.</p>
-<p>Examples of tools:</p>
+<p>Packages help you:</p>
 <ul>
-<li>Web search</li>
-<li>Calculator</li>
-<li>Code execution</li>
-<li>File reading and writing</li>
-<li>Calling APIs</li>
-<li>Database lookup</li>
+<li>keep code organized,</li>
+<li>reuse code across projects,</li>
+<li>and share code with others.</li>
 </ul>
-<p>Without tools, AI can mostly "talk."
-With tools, AI can also "do."</p>
-<h3 id="5-actions">5) Actions</h3>
-<p>The AI runs those tools to collect real information or perform real tasks.</p>
-<h3 id="6-observation-and-feedback">6) Observation and feedback</h3>
-<p>After each action, it reads the result and checks:</p>
+<h2 id="types-of-packages">Types of Packages</h2>
+<h3 id="1-standard-library-packages-built-into-python">1) Standard Library Packages (built into Python)</h3>
+<p>Examples: <code>math</code>, <code>os</code>, <code>json</code>, <code>datetime</code></p>
+<pre><code class="language-python">import math
+
+print(math.sqrt(25))
+</code></pre>
+<h3 id="2-third-party-packages-installed-from-pypi">2) Third-Party Packages (installed from PyPI)</h3>
+<p>Examples: <code>numpy</code>, <code>pandas</code>, <code>requests</code>, <code>matplotlib</code></p>
+<p>Install them with <code>pip</code>:</p>
+<pre><code class="language-bash">python -m pip install numpy pandas requests
+</code></pre>
+<h2 id="popular-package-examples">Popular Package Examples</h2>
+<h3 id="1-numpy">1) NumPy</h3>
+<p>NumPy is used for fast numerical computing and arrays.</p>
+<pre><code class="language-python">import numpy as np
+
+arr = np.array([10, 20, 30, 40])
+print(arr.mean())
+print(arr.sum())
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">25.0
+100
+</code></pre>
+<h3 id="2-pandas">2) Pandas</h3>
+<p>Pandas is used for data analysis with tables (<code>DataFrame</code>).</p>
+<pre><code class="language-python">import pandas as pd
+
+df = pd.DataFrame(
+    {
+        &quot;name&quot;: [&quot;Ava&quot;, &quot;Zain&quot;, &quot;Mina&quot;],
+        &quot;score&quot;: [85, 92, 78],
+    }
+)
+
+print(df)
+print(df[&quot;score&quot;].mean())
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-text">   name  score
+0   Ava     85
+1  Zain     92
+2  Mina     78
+85.0
+</code></pre>
+<h3 id="3-requests">3) Requests</h3>
+<p><code>requests</code> is used to send HTTP requests to APIs and websites.</p>
+<pre><code class="language-python">import requests
+
+response = requests.get(&quot;https://api.github.com&quot;)
+print(response.status_code)
+</code></pre>
+<p>Possible output:</p>
+<pre><code class="language-text">200
+</code></pre>
+<h2 id="how-to-install-these-packages">How to Install These Packages</h2>
+<p>You can install <code>numpy</code>, <code>pandas</code>, and <code>requests</code> using either command:</p>
+<pre><code class="language-bash">python -m pip install numpy pandas requests
+pip install numpy pandas requests
+</code></pre>
+<p>Both commands are valid.
+Use <code>python -m pip</code> when you want to be sure packages are installed in the same Python interpreter you are running.
+Use <code>pip</code> as a shorter command when your environment is already set correctly.</p>
+<h3 id="command-breakdown">Command Breakdown</h3>
+<p>For these commands:</p>
+<pre><code class="language-bash">python -m pip install numpy pandas requests
+pip install numpy pandas requests
+</code></pre>
 <ul>
-<li>Did it work?</li>
-<li>Is anything missing?</li>
-<li>Did an error happen?</li>
+<li><code>python</code>: runs the Python interpreter.</li>
+<li><code>-m</code>: tells Python to run a module as a script.</li>
+<li><code>pip</code>: the module being run (<code>pip</code> package manager).</li>
+<li><code>install</code>: the pip action to install packages.</li>
+<li><code>numpy pandas requests</code>: package names to install.</li>
 </ul>
-<p>Then it adjusts the next step.</p>
-<h3 id="7-memory">7) Memory</h3>
-<p>The AI keeps useful context while working.</p>
+<p>In <code>pip install ...</code>, <code>pip</code> directly runs the pip executable from your current environment.</p>
+<p>Why use <code>python -m pip</code> instead of just <code>pip</code>?</p>
 <ul>
-<li>Short-term memory: what happened during this task</li>
-<li>Long-term memory (if enabled): user preferences and past decisions</li>
+<li>It ensures pip runs with the same Python interpreter/environment you selected.</li>
+<li>This helps avoid installing packages into the wrong Python version.</li>
 </ul>
-<h3 id="8-decision-loop">8) Decision loop</h3>
-<p>It repeats this cycle:</p>
-<p><strong>Plan</strong> &rarr; <strong>Act</strong> &rarr; <strong>Check</strong> &rarr; <strong>Improve</strong></p>
-<p>This loop continues until the goal is reached or the process is stopped.</p>
-<h3 id="9-guardrails-and-human-control">9) Guardrails and human control</h3>
-<p>Good agentic systems include safety controls, such as:</p>
+<p>You can also install them one by one:</p>
+<pre><code class="language-bash">python -m pip install numpy
+python -m pip install pandas
+python -m pip install requests
+</code></pre>
+<p>To check if installation worked:</p>
+<pre><code class="language-bash">python -m pip show numpy pandas requests
+</code></pre>
+<h2 id="other-useful-pip-commands">Other Useful <code>pip</code> Commands</h2>
+<h3 id="1-list-installed-packages">1) List installed packages</h3>
+<pre><code class="language-bash">python -m pip list
+</code></pre>
+<h3 id="2-check-pip-version">2) Check pip version</h3>
+<pre><code class="language-bash">python -m pip --version
+</code></pre>
+<h3 id="3-upgrade-a-package">3) Upgrade a package</h3>
+<pre><code class="language-bash">python -m pip install --upgrade numpy
+</code></pre>
+<h3 id="4-uninstall-a-package">4) Uninstall a package</h3>
+<pre><code class="language-bash">python -m pip uninstall requests
+</code></pre>
+<h3 id="5-save-current-environment-packages">5) Save current environment packages</h3>
+<pre><code class="language-bash">python -m pip freeze &gt; requirements.txt
+</code></pre>
+<h3 id="6-install-from-a-requirementstxt-file">6) Install from a <code>requirements.txt</code> file</h3>
+<pre><code class="language-bash">python -m pip install -r requirements.txt
+</code></pre>
+<h3 id="7-check-dependency-issues">7) Check dependency issues</h3>
+<pre><code class="language-bash">python -m pip check
+</code></pre>
+<h2 id="quick-summary">Quick Summary</h2>
 <ul>
-<li>Permission checks</li>
-<li>Blocked actions for risky operations</li>
-<li>Human approval for sensitive steps</li>
+<li>A package is a collection of related modules.</li>
+<li>Use built-in packages for common tasks.</li>
+<li>Install third-party packages with <code>pip</code>.</li>
+<li>Common beginner-friendly packages: <code>numpy</code>, <code>pandas</code>, and <code>requests</code>.</li>
 </ul>
-<h2 id="quick-difference">Quick difference</h2>
-<p>A normal chatbot mostly gives one response.
-Agentic AI can run a workflow from start to finish.</p>
-<h2 id="data-analyst-vs-data-engineer-vs-data-scientist">Data Analyst vs Data Engineer vs Data Scientist</h2>
-<p><img alt="Comparison of Data Analyst, Data Engineer, and Data Scientist Roles" src="../../assets/images/module-1/class-1/different-fields-in-ds.png" /></p>
-<p>This image compares three common careers in the data world. They all work with data, but each role solves a different part of the problem.</p>
-<h3 id="data-analyst">Data Analyst</h3>
-<p>Main focus: understanding what already happened.</p>
-<ul>
-<li>Helps teams make decisions using reports and dashboards</li>
-<li>Finds trends and patterns in historical data</li>
-<li>Common skills: SQL, Excel, Power BI or Tableau, and basic statistics</li>
-</ul>
-<p>Simple question they answer: "What is happening in the business right now?"</p>
-<h3 id="data-engineer">Data Engineer</h3>
-<p>Main focus: building the data foundation.</p>
-<ul>
-<li>Creates and maintains data pipelines (automatic data movement systems)</li>
-<li>Cleans and transforms raw data so others can use it safely</li>
-<li>Sets up storage systems like data warehouses and data lakes</li>
-<li>Common skills: Python, ETL tools, big data systems, and cloud platforms</li>
-</ul>
-<p>Simple question they answer: "How do we make data reliable and ready to use?"</p>
-<h3 id="data-scientist">Data Scientist</h3>
-<p>Main focus: predicting what is likely to happen next.</p>
-<ul>
-<li>Builds machine learning models</li>
-<li>Uses statistics and experiments to test ideas</li>
-<li>Creates predictive systems (for example: demand forecast, churn prediction)</li>
-<li>Common skills: Python or R, machine learning, statistics, and visualization</li>
-</ul>
-<p>Simple question they answer: "What will probably happen next, and why?"</p>
-<h3 id="how-these-roles-connect">How these roles connect</h3>
-<p>In most teams, the flow looks like this:</p>
-<p><strong>Raw Data</strong> &rarr; <strong>Data Engineer prepares it</strong> &rarr; <strong>Data Analyst explains it</strong> &rarr; <strong>Data Scientist predicts with it</strong></p>
-<p>In small companies, one person may do parts of all three roles. In larger companies, these are usually separate jobs.</p>
-<h3 id="python-installation">Python Installation</h3>
-<p><strong>Via Anaconda</strong></p>
-<p>Click <a href="https://www.anaconda.com/download">Anaconda</a> to install anaconda, which is a popular Python distribution that includes many data science libraries and tools.</p>
-<blockquote>
-<p>NOTE: During the installation do not forget to check the box that says "Add Anaconda to my PATH environment variable" to ensure you can use Python from the command line.</p>
-</blockquote>
-<p><img alt="Add Anaconda to PATH" src="../../assets/images/module-1/class-1/anaconda-add-to-path.png" /></p>
-<p><strong>Directly via Python</strong></p>
-<p>Click <a href="https://www.python.org/downloads/">Python</a> to install Python directly from the official website. This is a more lightweight option if you only need Python without the additional tools provided by Anaconda.</p>
-<p>VS Code Installation:</p>
-<p>Click <a href="https://code.visualstudio.com/download">VS Code</a> to install Visual Studio Code, a popular code editor that supports Python development with features like debugging, extensions, and integrated terminal.</p>
-<p>VS Code extensions for Python:</p>
-<ul>
-<li>Python VS Code Extension</li>
-</ul>
-<p><img alt="Python Ext" src="../../assets/images/module-1/class-1/python-vs-code-ext.png" /></p>
-<ul>
-<li>Jypyter VS Code Extension</li>
-</ul>
-<p><img alt="Jupyter Ext" src="../../assets/images/module-1/class-1/jupyter-vs-code-ext.png" /></p>
-<ul>
-<li>Code Runner VS Code Extension</li>
-</ul>
-<p><img alt="Code Runner Ext" src="../../assets/images/module-1/class-1/code-runner-vs-code-ext.png" /></p>
 
 
 
