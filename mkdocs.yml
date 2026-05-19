@@ -6,6 +6,7 @@ nav:
   - "Module 1":
     - Overview: Module-1/index.md
     - "Class 1: Python Data Types": Module-1/class-1-python-data-types.md
+    - "Class 2: Python Fundamentals": Module-1/class-2-python-fundamentals.md
 
 theme:
   name: material
