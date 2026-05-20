@@ -207,4 +207,4 @@ python -m pip check
 
 **Notebook** 
 
-[OpenStreetMap](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3.ipynb)
+[OpenStreetMap](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3-openstreetmap.ipynb)
