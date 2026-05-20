@@ -210,3 +210,5 @@ python -m pip check
 - [CSV Create and Read Using Panda](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3-csv-create-and-read.ipynb)
 
 - [OpenStreetMap](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3-openstreetmap.ipynb)
+
+- [QRCode Generator](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3-qrcode-generator.ipynb)
