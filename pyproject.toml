@@ -13,5 +13,6 @@ dependencies = [
     "pillow>=12.2.0",
     "qrcode>=8.2",
     "requests>=2.33.1",
+    "sounddevice>=0.5.5",
     "whisper>=1.1.10",
 ]
