@@ -9,3 +9,9 @@ wheels/
 # Virtual environments
 .venv
 push.sh
+.antigravitycli
+*.pdf
+*.xlsx
+*.csv
+*.png
+*.log
