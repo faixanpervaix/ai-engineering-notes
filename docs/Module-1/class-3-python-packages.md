@@ -207,10 +207,10 @@ python -m pip check
 
 **Notebooks**
 
-- [CSV Create and Read Using Panda](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3-csv-create-and-read.ipynb)
+- [CSV Create and Read Using Panda](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/02-csv-create-and-read.ipynb)
 
-- [OpenStreetMap](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3-openstreetmap.ipynb)
+- [OpenStreetMap](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/03-openstreetmap.ipynb)
 
-- [QRCode Generator](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3-qrcode-generator.ipynb)
+- [QRCode Generator](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/04-qrcode-generator.ipynb)
 
-- [Audio Transcribing](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3-audi-transcribing.ipynb)
+- [Audio Transcribing](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/01-audi-transcribing.ipynb)
