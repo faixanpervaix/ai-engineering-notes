@@ -214,3 +214,5 @@ python -m pip check
 - [QRCode Generator](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/04-qrcode-generator.ipynb)
 
 - [Audio Transcribing](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/01-audi-transcribing.ipynb)
+
+- [Text to Speech](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/05-text-to-speech.ipynb)
