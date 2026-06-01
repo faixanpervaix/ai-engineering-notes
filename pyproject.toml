@@ -22,6 +22,7 @@ dependencies = [
     "sounddevice>=0.5.5",
     "soundfile>=0.13.1",
     "whisper>=1.1.10",
+    "yagmail>=0.16.0",
 ]
 
 [dependency-groups]
