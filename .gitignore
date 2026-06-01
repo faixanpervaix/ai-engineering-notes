@@ -19,3 +19,4 @@ notebooks/modle-1/class-3/output.mp3
 notebooks/modle-1/class-3/speech.txt
 .env
 ruff.sh
+*.wav
