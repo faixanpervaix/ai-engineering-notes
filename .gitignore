@@ -18,6 +18,4 @@ push.sh
 notebooks/modle-1/class-3/output.mp3
 notebooks/modle-1/class-3/speech.txt
 .env
-notebooks/modle-1/.DS_Store
-notebooks/modle-1/.DS_Store
 ruff.sh
