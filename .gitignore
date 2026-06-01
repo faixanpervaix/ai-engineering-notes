@@ -20,3 +20,4 @@ notebooks/modle-1/class-3/speech.txt
 .env
 ruff.sh
 *.wav
+!emails_list.csv
