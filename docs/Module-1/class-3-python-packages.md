@@ -207,14 +207,14 @@ python -m pip check
 
 **Notebooks**
 
-- [CSV Create and Read Using Panda](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/02-csv-create-and-read.ipynb)
+- [CSV Create and Read Using Panda](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-03/02-csv-create-and-read.ipynb)
 
-- [OpenStreetMap](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/03-openstreetmap.ipynb)
+- [OpenStreetMap](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-03/03-openstreetmap.ipynb)
 
-- [QRCode Generator](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/04-qrcode-generator.ipynb)
+- [QRCode Generator](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-03/04-qrcode-generator.ipynb)
 
-- [Audio Transcribing](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/01-audi-transcribing.ipynb)
+- [Audio Transcribing](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-03/01-audi-transcribing.ipynb)
 
-- [Text to Speech](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/05-text-to-speech.ipynb)
+- [Text to Speech](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-03/05-text-to-speech.ipynb)
 
-- [Email Sending](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-3/06-email-sending.ipynb)
+- [Email Sending](https://github.com/faixanpervaix/ai-engineering-notes/blob/main/notebooks/modle-1/class-03/06-email-sending.ipynb)
